@@ -80,7 +80,7 @@ try
 					_buildRights = _x getVariable ["ExileTerritoryBuildRights", []];
 					if (_playerUID in _buildRights) then
 					{
-						_territoryLevel = _x getVariable ["ExileTerritoryLevel", 0]; // Added by alexslx's BuildLimit Script
+						_territoryLevel = _x getVariable ["ExileTerritoryLevel", 0]; // Added by xalexslx's BuildLimit Script
 						_territoryLevelConfigs = getArray (missionConfigFile >> "CfgTerritories" >> "prices");
 						_territoryLevelConfig = _territoryLevelConfigs select ((_x getVariable ["ExileTerritoryLevel", 0]) - 1);
 						_numberOfConstructionsAllowed = _territoryLevelConfig select 2;
